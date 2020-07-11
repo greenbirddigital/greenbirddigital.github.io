@@ -1,0 +1,414 @@
+/**
+    Colors
+    green1: #bbf428
+    green2: #8cff00
+    light1: #f9f9fa;
+    light2: #ededed;
+    dark: #111111;
+    default: #222222;
+ */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/* Css */
+@import url('main.css');
+
+/* Pages */
+.page-1-1 {
+    height: 100vh;
+}
+
+.page-2-1 {
+    height: 50vh;
+}
+
+.page-3-1 {
+    height: 33.33vh;
+}
+
+.page-4-1 {
+    height: 25vh;
+}
+
+/* Backgrounds */
+.background-light {
+    background: #ededed;
+}
+
+.background-green {
+    background: #8cff00;
+}
+
+.background-dark {
+    background: #111111;
+}
+
+/* Text */
+.content-light {
+    color: #ededed;
+}
+
+.content-green {
+    color: #8cff00;
+}
+
+.content-default {
+    color: #222222;
+}
+
+.content-dark {
+    color: #080808;
+}
+
+.content-mute {
+    color: #888888;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #ededed;
+    background: #080808;
+}
+
+::selection {
+    color: #ededed;
+    background: #080808;
+}
+
+.logo {
+    pointer-events: none;
+    font-size: 24px;
+    padding: 0 1.5em;
+    left: 40px;
+    font-family: "Major Mono Display";
+}
+
+/* Header */
+
+header > .logo {
+    background: transparent;
+    position: relative;
+    top: 20px;
+}
+
+header > .logo > img {
+    width: 10em;
+}
+
+header > .logo > a {
+    color: #8cff00;
+    border: 1px solid #8cff00;
+    padding: 20px;
+}
+
+#header {
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    background: #ededed;
+    height: 5em;
+    left: 0;
+    line-height: 3em;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hero-text {
+    font-size: 48px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ededed;
+    color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #333333;
+}
+
+.subtitle-text {
+    color: #ededed;
+}
+
+.banner.style5 .content {
+    width: 100vw;
+}
+
+.spotlight .image {
+    background-color: #ededed;
+}
+
+#page-wrapper {
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    padding-top: 3em;
+}
+
+#page-wrapper:before {
+    background: rgba(0, 0, 0, 0);
+    content: '';
+    display: block;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+}
+
+#menu {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-overflow-scrolling: touch;
+    background: #080808;
+    color: #ededed;
+    height: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    padding: 3em 2em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10002;
+    text-align: center;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul>li {
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+}
+
+#menu ul>li:first-child {
+    border-top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#menu ul>li>a {
+    border: 0;
+    color: #ededed;
+    display: block;
+    font-size: 28px;
+    letter-spacing: 0.225em;
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu ul>li>a:hover {
+    font-weight: 600;
+}
+
+#menu .close {
+    background-image: url("../../images/icons/close.png");
+    background-position: 4.85em 1em;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 10em;
+    width: 8em;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    vertical-align: middle;
+}
+
+body.is-menu-visible #page-wrapper {
+    opacity: 0.35;
+}
+
+body.is-menu-visible #page-wrapper:before {
+    display: block;
+}
+
+body.is-menu-visible #menu {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#header nav {
+    line-height: inherit;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+#header nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#header nav>ul>li {
+    display: inline-block;
+    padding: 0;
+}
+
+#header nav>ul>li>a.menuToggle {
+    outline: 0;
+    position: relative;
+}
+
+#header nav>ul>li>a.menuToggle:after {
+    background-image: url("../../images/icons/bars.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 3.75em;
+    vertical-align: top;
+    width: 3em;
+}
+
+#header nav>ul>li:first-child {
+    margin-left: 0;
+}
+
+.about-us {
+    height: 100vh;
+}
+
+.services>section:hover {
+    background: #ffffff;
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+}
+
+.email-text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer .logo {
+    background: transparent;
+    padding: 40px;
+}
+
+/** ----- Responsive ----- **/
+@media screen and (max-width: 1680px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+    .logo {
+        padding: 0.5em 0 0 1.5em;
+        left: 20px;
+    }
+
+    header > .logo > img {
+        width: 16em;
+    }
+
+    .hero-text {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #header {
+        height: 7em;
+    }
+
+    .logo {
+        padding: 0;
+        left: 20px;
+    }
+
+    #header .logo {
+        top: 30px;
+    }
+
+    header > .logo > img {
+        width: 10em;
+    }
+
+    #header > nav {
+        right: 20px;
+    }
+
+    #header nav > ul > li > a.menuToggle {
+        padding: 0;
+    }
+
+    #header nav > ul > li > a.menuToggle span {
+        display: none;
+    }
+
+    #header nav > ul > li > a {
+        padding: 0 0 0 1.5em;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    #menu {
+        padding: 3em 1.5em;
+    }
+
+    #menu ul > li > a {
+        line-height: 3em;
+    }
+
+    footer > .inner > .logo > img {
+        width: 10em;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .logo {
+        padding: 0 0 0 20px;
+        left: 10px;
+    }
+
+    header > .logo > img {
+        width: 8em;
+    }
+
+    .hero-text {
+        font-size: 24px;
+    }
+
+    #header > nav {
+        right: 20px;
+    }
+
+    footer > .inner > .logo > img {
+        width: 8em;
+    }
+}
